@@ -27,7 +27,8 @@ lazy val root = (project in file("."))
   .settings(
       name := "scalameter-getting-started",
       libraryDependencies ++= Seq(
-          "com.storm-enroute" %% "scalameter" % "0.19" % "bench"
+        "com.storm-enroute" %% "scalameter" % "0.19" % "bench",
+        "org.scalatest" %% "scalatest"   % "3.1.1" % "test",
           )
   ).configs(Benchmark).settings(inConfig(Benchmark)(Defaults.testSettings): _*)
 
