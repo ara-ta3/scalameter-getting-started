@@ -9,9 +9,6 @@ object AppBenchmark extends Bench.LocalTime {
     measure method "fibonacci" in {
       using(sizes) in { x => App.fibonacciTailrec(x) }
     }
-  }
-
-  performance of "N" in  {
     measure method "fibonacciSlow" in {
       using(sizes) in { x => App.fibonacci(x) }
     }
