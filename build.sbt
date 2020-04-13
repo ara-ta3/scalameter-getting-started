@@ -2,7 +2,7 @@ lazy val Benchmark = config("bench") extend Test
 
 val commonSettings = Seq(
   version := "0.1-SNAPSHOT",
-  scalaVersion := "2.12.12",
+  scalaVersion := "2.12.11",
   scalacOptions ++= Seq(
     "-deprecation",
     "-feature",
