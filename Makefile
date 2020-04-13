@@ -4,3 +4,6 @@ SBT=sbt/bin/sbt
 
 sbt:
 	$(SBT)
+
+bench:
+	$(SBT) bench:test
