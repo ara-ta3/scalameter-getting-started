@@ -29,7 +29,9 @@ lazy val root = (project in file("."))
           "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
           "Sonatype OSS Releases" at "https://oss.sonatype.org/content/repositories/releases"
       ),
-      testFrameworks += new TestFramework("org.scalameter.ScalaMeterFramework")
+      testFrameworks += new TestFramework("org.scalameter.ScalaMeterFramework"),
+    Benchmark / parallelExecution := false,
+    logBuffered := false
 
   ).configs(Benchmark).settings(inConfig(Benchmark)(Defaults.testSettings): _*)
 
