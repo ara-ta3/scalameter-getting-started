@@ -2,7 +2,7 @@ lazy val Benchmark = config("bench") extend Test
 
 val commonSettings = Seq(
   version := "0.1-SNAPSHOT",
-  scalaVersion := "2.12.11",
+  scalaVersion := "2.13.6",
   scalacOptions ++= Seq(
     "-deprecation",
     "-feature",
@@ -12,7 +12,7 @@ val commonSettings = Seq(
     "-Xfatal-warnings",
     "-Ywarn-numeric-widen",
     "-Ywarn-unused",
-    "-Ywarn-unused-import",
+    "-Ywarn-unused:imports",
     "-Ywarn-value-discard",
   ),
   resolvers ++= Seq(
