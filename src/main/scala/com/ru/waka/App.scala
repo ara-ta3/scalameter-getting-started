@@ -6,7 +6,7 @@ object App {
     @scala.annotation.tailrec
     def loop(n: Int, a1: Int = 0, a2: Int = 1): Int =
       if (n <= 0) a1
-      else loop(n-1, a2, a1 + a2)
+      else loop(n - 1, a2, a1 + a2)
     loop(n)
   }
 

@@ -14,5 +14,4 @@ class AppSpec extends AnyFreeSpec {
       assert(actual == 55)
     }
   }
-
 }
